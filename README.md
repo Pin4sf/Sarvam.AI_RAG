@@ -25,7 +25,7 @@ A detailed development guide can be found on [colab notebook](https://colab.rese
 
 ## Project Structure
 
-- `app.py`: FastAPI backend server
+- `api.py`: FastAPI backend server
 - `frontend.py`: Streamlit frontend application
 - `ingest.py`: PDF ingestion and text splitting
 - `rag_system.py`: RAG (Retrieval-Augmented Generation) system implementation
