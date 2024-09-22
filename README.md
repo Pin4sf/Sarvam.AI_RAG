@@ -1,25 +1,63 @@
-# Project Title
+# NCERT Sound Chapter Interactive Learning Tools
 
-A brief description of what this project does and who it's for.
+This project provides an interactive learning platform for the NCERT Sound chapter, offering various tools to enhance understanding and engagement with the material.
 
-## Table of Contents
+## Features
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+1. **Question & Answer System**: Ask questions about the Sound chapter and receive detailed answers.
+2. **Text-to-Speech**: Convert text answers to speech for auditory learning.
+3. **Chapter Summary**: Generate concise summaries of the chapter content.
+4. **Interactive Quiz**: Take quizzes with dynamically generated questions and receive instant feedback.
+5. **Summary Flowchart**: Visualize the chapter's key concepts in a flowchart format.
+6. **Exam Guide**: Generate custom exam guides with practice questions.
 
-## Installation
+## Technology Stack
 
-Step-by-step instructions on how to get the development environment running.
+- **Backend**: FastAPI
+- **Frontend**: Streamlit
+- **AI Model**: Google's Gemini 1.5 Flash
+- **Vector Database**: Chroma
+- **Embeddings**: Hugging Face (sentence-transformers/all-MiniLM-L6-v2)
+- **PDF Processing**: PyPDFLoader, PDFPlumberLoader
+- **Text-to-Speech**: Sarvam AI API
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+## Project Structure
 
-# Navigate to the project directory
-cd yourproject
+- `app.py`: FastAPI backend server
+- `frontend.py`: Streamlit frontend application
+- `ingest.py`: PDF ingestion and text splitting
+- `rag_system.py`: RAG (Retrieval-Augmented Generation) system implementation
+- `vector_db.py`: Vector database creation and management
 
-# Install dependencies
-npm install
+## Setup and Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   pip install fastapi streamlit langchain google-generativeai requests chromadb sentence_transformers PyPDF2 pdfplumber
+   ```
+3. Set up environment variables:
+   - `GOOGLE_API_KEY`: Your Google API key for Gemini
+   - `SARVAM_API_KEY`: Your Sarvam AI API key for text-to-speech
+
+## Running the Application
+
+1. Start the FastAPI backend:
+   ```
+   uvicorn app:app --reload
+   ```
+2. Run the Streamlit frontend:
+   ```
+   streamlit run frontend.py
+   ```
+
+## Usage
+
+1. Open the Streamlit app in your browser (typically at `http://localhost:8501`).
+2. Use the sidebar to navigate between different tools:
+   - Ask questions about the Sound chapter
+   - Generate chapter summaries
+   - Take quizzes
+   - View summary flowcharts
+   - Create exam guides
+3. Explore the Text-to-Speech feature to listen to responses.
