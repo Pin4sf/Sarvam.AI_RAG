@@ -2,6 +2,8 @@
 
 This project provides an interactive learning platform for the NCERT Sound chapter, offering various tools to enhance understanding and engagement with the material.
 
+A detailed development guide can be found on [colab notebook](https://colab.research.google.com/drive/1jeRa0pO2V_ZaGVyVIVg-CkoLWxENhUcg?usp=sharing)
+
 ## Features
 
 1. **Question & Answer System**: Ask questions about the Sound chapter and receive detailed answers.
@@ -34,7 +36,7 @@ This project provides an interactive learning platform for the NCERT Sound chapt
 1. Clone the repository
 2. Install dependencies:
    ```
-   pip install fastapi streamlit langchain google-generativeai requests chromadb sentence_transformers PyPDF2 pdfplumber
+   pip install fastapi streamlit langchain google-generativeai requests chromadb sentence_transformers langchain_community pydantic chromadb  uvicorn
    ```
 3. Set up environment variables:
    - `GOOGLE_API_KEY`: Your Google API key for Gemini
@@ -44,7 +46,7 @@ This project provides an interactive learning platform for the NCERT Sound chapt
 
 1. Start the FastAPI backend:
    ```
-   uvicorn app:app --reload
+   uvicorn api:app --reload
    ```
 2. Run the Streamlit frontend:
    ```
