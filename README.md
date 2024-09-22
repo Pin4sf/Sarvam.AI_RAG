@@ -2,7 +2,7 @@
 
 This project provides an interactive learning platform for the NCERT Sound chapter, offering various tools to enhance understanding and engagement with the material.
 
-A detailed development guide can be found on [notion]([https://colab.research.google.com/drive/1jeRa0pO2V_ZaGVyVIVg-CkoLWxENhUcg?usp=sharing](https://sugared-zoo-169.notion.site/Sarvam-AI-RAG-1095f7d84122802e9834f475a9fde624?pvs=74)
+A detailed development guide can be found on [notion](https://sugared-zoo-169.notion.site/Sarvam-AI-RAG-1095f7d84122802e9834f475a9fde624)
 
 ## Features
 
